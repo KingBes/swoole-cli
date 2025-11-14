@@ -1,6 +1,9 @@
 name: build-swoole-cli-windows-cygwin
 
-on: [ push, pull_request ]
+on: 
+  push:
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   windows-cygwin:
