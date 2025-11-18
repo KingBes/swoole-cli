@@ -9,7 +9,7 @@ return function (Preprocessor $p) {
         (new Library('ffi'))
             ->withHomePage('https://www.php.net/manual/en/book.ffi.php')
             ->withPrefix($ffi_prefix)
-            ->withConfigure('--with-ffi')
+            ->withConfigure('--with-ffi --prefix=' . $ffi_prefix)
             ->withDependentLibraries('libffi')
             ->withLicense('PHP License')
     );
